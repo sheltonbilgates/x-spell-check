@@ -24,7 +24,7 @@ const SpellCheck = () => {
         const correctedWord = customDictionary[word.toLowerCase()];
         return correctedWord || word;
       });
-      const correctedText = correctedWords.join(" ")
+  
 
       const firstCorrection = correctedWords.find((word, index) => word !== words[index])
       setSuggestedText(firstCorrection || "")
